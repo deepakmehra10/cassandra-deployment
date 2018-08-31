@@ -1,0 +1,76 @@
+{
+  "cardToDateMap": [
+    {
+      "shipCode": "AL",
+      "dates": "['20180604','20180608']",
+      "cardIdentifier": "MUSTER_DRILL"
+    },
+    {
+      "shipCode": "AL",
+      "dates": "['20180605','20180607']",
+      "cardIdentifier": "PARTY BY THE POOL"
+    }
+  ],
+  "needToKnowCards": [
+    {
+      "entryPoint": {
+        "title": null,
+        "subtitle": null
+      },
+      "cardIdentifier": "MUSTER_DRILL",
+      "cardSortNumber": 1,
+      "cardTitle": "Muster Drill",
+      "cardSubtitle": "Mandatory Attendance at the Muster Drill",
+      "cardDescription": "Please join the muster drill on deck 5.",
+      "cardImageHeroUrl": "path/to/image.jpg",
+      "includedDayCards": [
+        {
+          "cardIdentifier": "MUSTER_DRILL",
+          "cardSortNumber": 1,
+          "ctaCardType": "portDayCard",
+          "cardTitle": "Muster Drill",
+          "cardSubtitle": "Mandatory Attendance at the Muster Drill",
+          "cardDescription": "Please join the muster drill on deck 5.",
+          "cardImageUrl": "path/to/image.jpg",
+          "cardCtaInfo": [
+            {
+              "ctaType": "okButton",
+              "ctaDescription": "Go To Deck Map",
+              "ctaRefLink": "path/to/URL"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entryPoint": {
+        "title": null,
+        "subtitle": "NTK Entry Point Subtitle"
+      },
+      "cardIdentifier": "PARTY BY THE POOL",
+      "cardSortNumber": 2,
+      "cardTitle": "POOL",
+      "cardSubtitle": "Party by the Pool",
+      "cardDescription": "Please join the party on deck 14.",
+      "cardImageHeroUrl": "path/to/image.jpg",
+      "includedDayCards": [
+        {
+          "cardIdentifier": "POOL_PARTY",
+          "cardSortNumber": 2,
+          "ctaCardType": "poolParty",
+          "cardTitle": "Pool Party",
+          "cardSubtitle": "Join us at the pool party",
+          "cardDescription": "Please join the party on deck 14",
+          "cardImageUrl": "path/to/image.jpg",
+          "cardCtaInfo": [
+            {
+              "ctaType": "okButton",
+              "ctaDescription": "Go To Deck Map",
+              "ctaRefLink": "path/to/URL"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
