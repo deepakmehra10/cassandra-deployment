@@ -50,5 +50,6 @@ public class CassandraConnector {
      */
     public void close() {
         cluster.close();
+        session.close();
     }
 }
