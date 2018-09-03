@@ -25,8 +25,13 @@ public class CassandraConnector {
      * @param node Cluster node IP address.
      * @param port Port of cluster host.
      */
-    public void connect(final String node, final int port) {
-        this.cluster = Cluster.builder().addContactPoint(node).withPort(port).build();
+    public void connect(final String node, final int port, final String username,
+                        final String password) {
+        this.cluster = Cluster.builder()
+                .addContactPoint(node)
+                .withPort(port)
+                .withCredentials(username, password)
+                .build();
         final Metadata metadata = cluster.getMetadata();
         out.printf("Connected to cluster: %s\n", metadata.getClusterName());
         for (final Host host : metadata.getAllHosts()) {
